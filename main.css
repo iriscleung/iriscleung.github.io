@@ -199,6 +199,12 @@ a:hover {
     #nav-name {
         text-align: left;    
     }
+    #footer-instagram {
+        display: none;
+    }
+    #footer-linkedin {
+        text-align: left;    
+    }
     .desktop-footer {
         display: none;
     }

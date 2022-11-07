@@ -90,6 +90,15 @@ body {
     justify-content: space-between;
 }
 
+#construction {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: calc(100% * (1 / 12));
+    padding-right: calc(100% * (1 / 12));
+
+    background-color: #808080;
+}
+
 
 .text-block {
     padding-right: 50%;

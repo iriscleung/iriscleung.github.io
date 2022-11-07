@@ -91,12 +91,14 @@ body {
 }
 
 #construction {
-    padding-top: 125px;
-    padding-bottom: 125px;
+    margin-top: 125px;
+    margin-bottom: 125px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: calc(100% * (1 / 12));
     padding-right: calc(100% * (1 / 12));
 
-    background-color: #808080;
+    background-color: #F2F2F2;
 }
 
 

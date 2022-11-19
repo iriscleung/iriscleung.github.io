@@ -74,6 +74,7 @@ body {
 }
 #case-study a {
     color: black;
+    text-decoration: underline;
 }
 #case-study a:hover {
     color: #808080;

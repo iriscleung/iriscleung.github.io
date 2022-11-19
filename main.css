@@ -43,6 +43,9 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#banner-text a {
+    text-decoration: underline;
+}
 .banner-block {
     width: 50%;
 }

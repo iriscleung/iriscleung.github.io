@@ -20,6 +20,11 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+            #footer {
+                background-image: url(footer-image.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
             a {
                 color: white;
             }
@@ -154,12 +159,57 @@
                     </p>
                 </div>
             </div>
+        </div>
 
-            <div id="construction">
-                <p>
-                    This page is still being constructed! Come back soon to see some more work.
-                </p>
+        <div id="construction">
+            <p>
+                This page is still being constructed! Come back soon to see some more work.
+            </p>
+        </div>
+
+        <div id="footer" style="color: white;">
+            <div style="text-align: left; flex-grow: 7;">
+                <h2>
+                    THANKS FOR POPPING BY!
+                    <br><br>
+                    I'M CURRENTLY BASED IN LOS ANGELES, CALIFORNIA. HAVE A PROJECT IN MIND? <a href="mailto:iriscleung@gmail.com">LET'S TALK</a>!    
+                    <br>
+                    THIS WEBSITE WAS DESIGNED AND CODED ENTIRELY FROM SCRATCH.             
+                </h2>
+            </div>
+            <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="https://instagram.com/iriscleung/" target="_blank">
+                        INSTAGRAM
+                    </a>
+                </h2>
+            </div>
+            <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="https://www.linkedin.com/in/iris-c-leung/" target="_blank">
+                        LINKEDIN
+                    </a>
+                </h2>
+            </div>
+            <div style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="../XX GLOBAL ASSETS/resume.pdf" target="_blank">
+                        RESUME
+                    </a>
+                </h2>
             </div>
         </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../main.js"></script>
+        <script>
+            $(function() {
+                $('body').pageCrossFade({
+                    duration: 400, 
+                    easing: 'swing', 
+                    links: 'all'
+                });
+            });
+        </script>
     </body>
 </html>

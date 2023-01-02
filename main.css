@@ -67,6 +67,9 @@ body {
     width: 100%;
     opacity: 100%;
 }
+#portfolio a img:hover {
+    opacity: 80%;
+}
 #case-study {
     padding-top: 125px;
     padding-bottom: 125px;

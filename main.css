@@ -65,6 +65,7 @@ body {
 }
 #portfolio a img {
     width: 100%;
+    opacity: 100%;
 }
 #case-study {
     padding-top: 125px;

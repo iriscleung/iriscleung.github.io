@@ -86,6 +86,22 @@ body {
 #case-study a:hover {
     color: #808080;
 }
+.case-study {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    padding-left: calc(100% * (1 / 12));
+    padding-right: calc(100% * (1 / 12));
+
+    background-color: white;
+    color: black;
+}
+.case-study a {
+    color: black;
+    text-decoration: underline;
+}
+.case-study a:hover {
+    color: #808080;
+}
 #footer {
     padding-top: 125px;
     padding-bottom: 30px;

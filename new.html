@@ -21,6 +21,7 @@
             h1 {
                 font-family: 'Six Caps', sans-serif;
                 font-size: 115px;
+                font-weight: normal;
             }
 
             #intro {
@@ -39,6 +40,7 @@
             }
             .card {
                 width: 316px;
+                height: 740px;
                 padding: 20px 25px;
 
                 background-color: white;
@@ -46,6 +48,11 @@
                 border-radius: 18px;
 
                 text-align: left;
+
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
         </style>
     </head>
@@ -94,16 +101,20 @@
 
         <a href="04 TOO CLOSE TO THE SUN/too-close.html">
             <div class="card">
-                <p>
-                    PASSION PROJECT
-                    <br>
-                    1 WEEK, WINTER 2022
-                    <br><br>
-                    Frontend and backend development for a growing collection of documented events and pictures, nicknamed “Too Close to the Sun.”
-                </p>
-                <h1 style="margin-top: 130px;">
-                    TOO CLOSE
-                </h1>
+                <div>
+                    <p>
+                        PASSION PROJECT
+                        <br>
+                        1 WEEK, WINTER 2022
+                        <br><br>
+                        Frontend and backend development for a growing collection of documented events and pictures, nicknamed “Too Close to the Sun.”
+                    </p>
+                </div>
+                <div>
+                    <h1 style="margin-bottom: 0px;">
+                        TOO CLOSE
+                    </h1>
+                </div>
             </div>
         </a>
 

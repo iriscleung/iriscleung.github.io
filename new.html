@@ -110,7 +110,7 @@
 
         <div id="content">
             <a href="04 TOO CLOSE TO THE SUN/too-close.html">
-                <div class="card">
+                <div class="card" id="too-close">
                     <div>
                         <p>
                             PASSION PROJECT
@@ -128,7 +128,7 @@
                 </div>
             </a>
             <a href="05 KP FIGMA REDESIGN/kp-figma.html">
-                <div class="card">
+                <div class="card" id="figma">
                     <div>
                         <p>
                             DESIGN CHALLENGE
@@ -214,5 +214,12 @@
                 </h2>
             </div>
         </div>
+
+        <script>
+            document.getElementById("figma").addEventListener("mouseover", function(){
+                document.body.style.backgroundColor = "#C7B9FF";
+            });
+        </script>
+
     </body>
 </html>

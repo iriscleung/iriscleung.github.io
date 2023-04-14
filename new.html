@@ -275,56 +275,42 @@
 
         <script>
             document.getElementById("too-close").addEventListener("mouseover", function(){
+                this.style.backgroundColor = "black";
                 this.style.color = "#808080";
-                document.body.style.backgroundColor = "black";
-                document.body.style.color = "#808080";
-                document.getElementById("work-redirect").innerHTML = "<p>SELECTED<br>WORK</p><img src='XX GLOBAL ASSETS/down-arrow-g.png' style='margin-bottom: 0px;'>";
             });
             document.getElementById("too-close").addEventListener("mouseout", function(){
+                this.style.backgroundColor = "white";
                 this.style.color = "black";
-                document.body.style.backgroundColor = "#F0EFEB";
-                document.body.style.color = "black";
-                document.getElementById("work-redirect").innerHTML = "<p>SELECTED<br>WORK</p><img src='XX GLOBAL ASSETS/down-arrow-b.png' style='margin-bottom: 0px;'>";
             });
 
             document.getElementById("figma").addEventListener("mouseover", function(){
-                this.style.color = "#808080";
-                document.body.style.backgroundColor = "#C7B9FF";
+                this.style.backgroundColor = "#C7B9FF";
             });
             document.getElementById("figma").addEventListener("mouseout", function(){
-                this.style.color = "black";
-                document.body.style.backgroundColor = "#F0EFEB";
+                this.style.backgroundColor = "white";
             });
 
             document.getElementById("av").addEventListener("mouseover", function(){
-                this.style.color = "#808080";
-                document.body.style.backgroundColor = "#C1D7CC";
+                this.style.backgroundColor = "#C1D7CC";
             });
             document.getElementById("av").addEventListener("mouseout", function(){
-                this.style.color = "black";
-                document.body.style.backgroundColor = "#F0EFEB";
+                this.style.backgroundColor = "white";
             });
 
             document.getElementById("innod").addEventListener("mouseover", function(){
-                this.style.color = "#808080";
-                document.body.style.backgroundColor = "#F5A949";
+                this.style.backgroundColor = "#F5A949";
             });
             document.getElementById("innod").addEventListener("mouseout", function(){
-                this.style.color = "black";
-                document.body.style.backgroundColor = "#F0EFEB";
+                this.style.backgroundColor = "white";
             });
 
             document.getElementById("work-co").addEventListener("mouseover", function(){
-                this.style.color = "#808080";
-                document.body.style.backgroundColor = "#FF3029";
-                document.body.style.color = "white";
-                document.getElementsByTagName("a").style.color = "white";
+                this.style.backgroundColor = "#FF3029";
+                this.style.color = "white";
             });
             document.getElementById("work-co").addEventListener("mouseout", function(){
+                this.style.backgroundColor = "white";
                 this.style.color = "black";
-                document.body.style.backgroundColor = "#F0EFEB";
-                document.body.style.color = "black";
-                document.getElementsByTagName("a").style.color = "black";
             });
         </script>
 

@@ -1,0 +1,216 @@
+<html> 
+    <head>
+        <title>Iris Leung - Work</title>
+        <link rel="shortcut icon" type="image/jpg" href="XX GLOBAL ASSETS/favicon.png">
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <link rel="stylesheet" href="main.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            .collapsible {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: calc(100% * (1 / 12));
+                padding-right: calc(100% * (1 / 12));
+                width: 100%;
+
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+
+                background-color: #F2F2F2;
+                border: none;
+                outline: none;
+                text-align: left;
+                cursor: pointer;
+            }
+            .collapsible:hover {
+                background-color: #CBCBCB;
+            }
+            .collapsible:after {
+                content: '\02795'; /* Unicode character for "plus" sign (+) */
+                float: right;
+
+                font-family: 'Inter', sans-serif;
+                font-size: 12px;
+            }
+            .active {
+                background-color: #F2F2F2;
+            }
+            .active:after {
+                content: "\2796"; /* Unicode character for "minus" sign (-) */
+            }
+            .archive-content {
+                padding: 0;
+                max-height: 0;
+
+                background-color: #F2F2F2;
+                overflow: hidden;
+                transition: max-height 0.3s ease-out;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nav">
+            <div id="nav-location" style="text-align: left; flex-grow: 3;">
+                <h2>
+                    LOS ANGELES, CALIFORNIA
+                </h2>
+            </div>
+            <div id="nav-name" style="flex-grow: 4;">
+                <h2>
+                    IRIS LEUNG
+                </h2>
+            </div>
+            <div style="text-align: right; flex-grow: 2;">
+                <h2>
+                    <a href="index.html">
+                        WORK
+                    </a>
+                </h2>
+            </div>
+            <div style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="00 ABOUT/about.html">
+                        ABOUT
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <div id="banner-text">
+            <div class="banner-block">
+                <h1>
+                    WORK
+                </h1>
+            </div>
+            <div class="banner-block">
+                <p>
+                    Snapshot: I’m a creative. 
+                    <br><br>
+                    I design websites, brands, and create assets that assist with human experiences. I thrive on collaborating with other innovative creators, builders, and thinkers to bring crazy projects to life.
+                </p>
+            </div>
+        </div>
+
+        <div id="portfolio">
+            <a href="04 TOO CLOSE TO THE SUN/too-close.html">
+                <img src="04 TOO CLOSE TO THE SUN/thumbnail.gif">
+            </a>
+            <a href="05 KP FIGMA REDESIGN/kp-figma.html">
+                <img src="05 KP FIGMA REDESIGN/thumbnail.gif">
+            </a>
+            <a href="02 AV/av.html">
+                <img src="02 AV/thumbnail.png">
+            </a>
+            <a href="03 INNOD X TMP/innodxtmp.html">
+                <img src="03 INNOD X TMP/thumbnail.png">
+            </a>
+            <a href="01 WORK CO/work-co.html">
+                <img src="01 WORK CO/thumbnail.gif">
+            </a>
+        </div>
+
+        <button type="button" class="collapsible" style="gap: 1rem;">CLICK FOR ARCHIVES</button>
+            <div class="archive-content">
+                <div id="portfolio">
+                    <a href="99 ARCHIVES/01 SAMSUNG/samsung.html">
+                        <img src="99 ARCHIVES/01 SAMSUNG/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/02 PRETZEL/pretzel.html">
+                        <img src="99 ARCHIVES/02 PRETZEL/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/03 KACHING/kaching.html">
+                        <img src="99 ARCHIVES/03 KACHING/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/04 WHOLE CHIP/whole-chip.html">
+                        <img src="99 ARCHIVES/04 WHOLE CHIP/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/05 DAILY TROJAN/daily-trojan.html">
+                        <img src="99 ARCHIVES/05 DAILY TROJAN/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/06 BANANAS/bananas.html">
+                        <img src="99 ARCHIVES/06 BANANAS/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/07 MISC CLIENT WORK/misc-client-work.html">
+                        <img src="99 ARCHIVES/07 MISC CLIENT WORK/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/08 CHIKIIN/chikiin.html">
+                        <img src="99 ARCHIVES/08 CHIKIIN/thumbnail.png">
+                    </a>
+                    <a href="99 ARCHIVES/09 3D RENDERINGS/renderings.html">
+                        <img src="99 ARCHIVES/09 3D RENDERINGS/thumbnail.png">
+                    </a>
+                </div>
+            </div>
+
+        <div id="footer">
+            <div style="text-align: left; flex-grow: 7;">
+                <h2>
+                    THANKS FOR POPPING BY!
+                    <br><br>
+                    I'M CURRENTLY BASED IN LOS ANGELES, CALIFORNIA. HAVE A PROJECT IN MIND? <a href="mailto:iriscleung@gmail.com">LET'S TALK</a>!  
+                    <br>
+                    THIS WEBSITE WAS DESIGNED AND CODED ENTIRELY FROM SCRATCH.               
+                </h2>
+            </div>
+            <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="https://instagram.com/iriscleung/" target="_blank">
+                        INSTAGRAM
+                    </a>
+                </h2>
+            </div>
+            <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="https://www.linkedin.com/in/iris-c-leung/" target="_blank">
+                        LINKEDIN
+                    </a>
+                </h2>
+            </div>
+            <div style="text-align: right; flex-grow: 1;">
+                <h2>
+                    <a href="XX GLOBAL ASSETS/resume.pdf" target="_blank">
+                        RESUME
+                    </a>
+                </h2>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="main.js"></script>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+
+            for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+            }
+
+            $(function() {
+                $('body').pageCrossFade({
+                    duration: 400, 
+                    easing: 'swing', 
+                    links: 'all'
+                });
+            });
+        </script>
+    </body>
+</html>

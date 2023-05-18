@@ -45,6 +45,29 @@
                 position: relative;
                 height: 1110px;
             }
+            .a-card {
+                position: absolute;
+            }
+            #too-close {
+                top: 0px;
+                left: calc(100% * (1 / 12));
+            }
+            #work-co {
+                top: 400px;
+                right: calc(100% * (2.5 / 12));
+            }
+            #av {
+                top: 100px;
+                right: calc(100% * (1 / 12));
+            }
+            #innod {
+                top: 300px;
+                left: calc(100% * (4 / 12));
+            }
+            #figma {
+                top: 620px;
+                left: calc(100% * (3 / 12));
+            }
             .card {
                 width: 300px;
                 height: 450px;
@@ -73,6 +96,36 @@
             #figma {
                 top: 620px;
                 left: calc(100% * (4 / 12));
+            }
+
+            @media only screen and (max-width: 970px) {
+                #content {
+                    height: auto;
+                }
+                .a-card{
+                    position: relative;
+                }
+                #too-close {
+                    top: 0px;
+                    left: 0px;
+                }
+                #work-co {
+                    top: 0px;
+                    right: 0px;
+                }
+                #av {
+                    top: 0px;
+                    right: 0px;
+                }
+                #innod {
+                    top: 0px;
+                    left: 0px;
+                }
+                #figma {
+                    top: 0px;
+                    left: 0px;
+                }       
+
             }
         </style>
     </head>
@@ -122,13 +175,8 @@
         </div>
 
         <div id="content">
-            <a href="04 TOO CLOSE TO THE SUN/too-close.html" 
-            style="
-                position: absolute; 
-                top: 0px;
-                left: calc(100% * (1 / 12));
-            ">
-                <div class="card" id="too-close">
+            <a href="04 TOO CLOSE TO THE SUN/too-close.html" class="a-card" id="too-close">
+                <div class="card">
                     <div>
                         <p>
                             PASSION PROJECT
@@ -145,13 +193,7 @@
                     </div>
                 </div>
             </a>
-            <a href="01 WORK CO/work-co.html"
-            style="
-                position: absolute; 
-                top: 400px;
-                right: calc(100% * (2.5 / 12));
-            ">
-                <div class="card" id="work-co">
+            <a href="01 WORK CO/work-co.html" class="a-card" id="work-co">
                     <div>
                         <p>
                             DESIGN INTERNSHIP
@@ -168,13 +210,8 @@
                     </div>
                 </div>
             </a>
-            <a href="02 AV/av.html"
-            style="
-                position: absolute; 
-                top: 100px;
-                right: calc(100% * (1 / 12));
-            ">
-                <div class="card" id="av">
+            <a href="02 AV/av.html" class="a-card" id="av">
+                <div class="card">
                     <div>
                         <p>
                             PERSONAL NOTES
@@ -191,13 +228,8 @@
                     </div>
                 </div>
             </a>
-            <a href="03 INNOD X TMP/innodxtmp.html"
-            style="
-                position: absolute; 
-                top: 300px;
-                left: calc(100% * (4 / 12));
-            ">
-                <div class="card" id="innod">
+            <a href="03 INNOD X TMP/innodxtmp.html" class="a-card" id="innod">
+                <div class="card">
                     <div>
                         <p>
                             WEB TEAM LEAD
@@ -214,13 +246,8 @@
                     </div>
                 </div>
             </a>
-            <a href="05 KP FIGMA REDESIGN/kp-figma.html" 
-            style="
-                position: absolute; 
-                top: 620px;
-                left: calc(100% * (3 / 12));
-            ">
-                <div class="card" id="figma">
+            <a href="05 KP FIGMA REDESIGN/kp-figma.html" class="a-card" id="figma">
+                <div class="card">
                     <div>
                         <p>
                             DESIGN CHALLENGE

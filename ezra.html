@@ -40,7 +40,17 @@
                 border: 1px solid black;
                 border-radius: 10px;
             }
-            #toc-section {
+            .toc-section {
+                margin: 0px;
+                padding: 0px 50px 50px 50px;
+            }
+            #color-key {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 20px;
+
                 margin: 0px;
                 padding: 0px 50px 50px 50px;
             }
@@ -49,6 +59,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding: 0px;
                 gap: 25px;
 
                 position: absolute;
@@ -60,10 +71,20 @@
     </head>
     <body>
         <div id="table-of-contents">
-            <div id="toc-section">
+            <div class="toc-section" style="padding-top: 50px;">
                 <h1>
                     Ezra Bird
                 </h1>
+                <p>
+                    Bethesda, Maryland
+                </p>
+                <p style="padding-left: 25px;
+                          opacity: 0.2;">
+                    Los Angeles, California
+                </p>
+            </div>
+            <div id="color-key">
+
             </div>
         </div>
     </body>

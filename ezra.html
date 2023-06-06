@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
 
         <style>
+            /* Global elements */
             body {
                 background-color: white;
                 color: black;
@@ -25,6 +26,11 @@
                 line-height: 16px;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
+            }
+            .circle {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
             }
 
             #table-of-contents {
@@ -54,6 +60,13 @@
                 margin: 0px;
                 padding: 0px 50px 50px 50px;
             }
+            .color-key-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 0px;
+                gap: 15px;
+            }
 
             #scroll-content {
                 display: flex;
@@ -75,16 +88,34 @@
                 <h1>
                     Ezra Bird
                 </h1>
-                <p>
+                <p style="float: left;">
                     Bethesda, Maryland
                 </p>
-                <p style="padding-left: 25px;
-                          opacity: 0.2;">
+                <p style="padding-left: 25px; opacity: 0.2; float: left;">
                     Los Angeles, California
                 </p>
             </div>
             <div id="color-key">
-
+                <div class="color-key-item">
+                    <div class="circle" style="background: #FFD600";></div>
+                    <p>Electronics</p>
+                </div>
+                <div class="color-key-item">
+                    <div class="circle" style="background: #0075FF";></div>
+                    <p>Mechanical</p>
+                </div>
+                <div class="color-key-item">
+                    <div class="circle" style="background: #2BC94C";></div>
+                    <p>Code</p>
+                </div>
+                <div class="color-key-item">
+                    <div class="circle" style="background: #D01900";></div>
+                    <p>Design</p>
+                </div>
+                <div class="color-key-item">
+                    <div class="circle" style="background: black";></div>
+                    <p>Product</p>
+                </div>
             </div>
         </div>
     </body>

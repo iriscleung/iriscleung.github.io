@@ -27,6 +27,10 @@
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
             }
+            a {
+                text-decoration: none;
+                color: black;
+            }
             .tag {
                 width: 16px;
                 height: 16px;
@@ -124,6 +128,10 @@
                 padding: 0px;
                 gap: 15px;
             }
+            #toc-contact {
+                position: absolute;
+                bottom: 50px;
+            }
 
             #scroll-content {
                 display: flex;
@@ -136,6 +144,12 @@
                 width: calc((100% - 75px) * (1 / 2));
                 right: 25px;
                 top: 25px;
+            }
+            .scroll-box {
+                padding: 30px;
+
+                border: 1px solid black;
+                border-radius: 10px;
             }
         </style>
     </head>
@@ -230,6 +244,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div id="toc-contact">
+                <p>
+                    Have a project in mind? <a href="mailto:ezrajbird@gmail.com">Let's talk!</a>
+                </p>
+            </div>
+        </div>
+
+        <div id="scroll-content">
+            <div class="scroll-box">
+                <p style="font-size: 16px;">
+                    Basically, I love to create.
+                    <br><br>
+                    I’m a designer that blends Electronics, Mechanics, Aesthetics, and Code to create purpose driven technology. Bringing together diverse minds in a collaborative environment keeps me excited for the future.
+                </p>
             </div>
         </div>
 

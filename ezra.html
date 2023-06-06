@@ -27,10 +27,25 @@
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
             }
-            .circle {
+            .tag {
                 width: 16px;
                 height: 16px;
                 border-radius: 50%;
+            }
+            #tag-electronics {
+                background: #FFD600;
+            }
+            #tag-mechanical {
+                background: #0075FF;
+            }
+            #tag-code {
+                background: #2BC94C;
+            }
+            #tag-design {
+                background: #D01900;
+            }
+            #tag-product {
+                background: black;
             }
 
             #table-of-contents {
@@ -67,6 +82,34 @@
                 padding: 0px;
                 gap: 15px;
             }
+            .color-key-item p{
+                margin-bottom: 0px;
+            }
+            .toc-line-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 5px 0px;
+            }
+            .toc-line-item p{
+                margin-bottom: 0px;
+            }
+            .toc-line-item-details {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 0px;
+            }
+            .toc-line-item-tags {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0px;
+                gap: 15px;
+            }
 
             #scroll-content {
                 display: flex;
@@ -97,24 +140,44 @@
             </div>
             <div id="color-key">
                 <div class="color-key-item">
-                    <div class="circle" style="background: #FFD600";></div>
+                    <div class="tag" id="tag-electronics"></div>
                     <p>Electronics</p>
                 </div>
                 <div class="color-key-item">
-                    <div class="circle" style="background: #0075FF";></div>
+                    <div class="tag" id="tag-mechanical"></div>
                     <p>Mechanical</p>
                 </div>
                 <div class="color-key-item">
-                    <div class="circle" style="background: #2BC94C";></div>
+                    <div class="tag" id="tag-code"></div>
                     <p>Code</p>
                 </div>
                 <div class="color-key-item">
-                    <div class="circle" style="background: #D01900";></div>
+                    <div class="tag" id="tag-design"></div>
                     <p>Design</p>
                 </div>
                 <div class="color-key-item">
-                    <div class="circle" style="background: black";></div>
+                    <div class="tag" id="tag-product"></div>
                     <p>Product</p>
+                </div>
+            </div>
+            <div class="toc-section">
+                <h2 style="margin-bottom: 30px;">
+                    Case Studies
+                </h2>
+                <div class="toc-line-item">
+                    <p style="width: 75px">
+                        001
+                    </p>
+                    <div class="toc-line-item-details">
+                        <p>
+                            Packa
+                        </p>
+                        <div class="toc-line-item-tags">
+                            <div class="tag" id="tag-mechanical"></div>
+                            <div class="tag" id="tag-design"></div>
+                            <div class="tag" id="tag-product"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

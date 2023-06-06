@@ -97,7 +97,7 @@
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: flex-start;
-                padding: 5px 0px;
+                padding: 5px 50px;
             }
             .toc-line-item p{
                 margin-bottom: 0px;
@@ -171,8 +171,8 @@
                     <p>Product</p>
                 </div>
             </div>
-            <div class="toc-section">
-                <h2 style="margin-bottom: 30px;">
+            <div class="toc-section" style="padding-left: 0px; padding-right: 0px;">
+                <h2 style="margin-bottom: 30px; padding: 0px 50px;">
                     Case Studies
                 </h2>
                 <div class="toc-line-item">
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="toc-line-item" style="background: #F4F4F4">
+                <div class="toc-line-item">
                     <p style="width: 10%">
                         002
                     </p>
@@ -207,5 +207,14 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            document.getElementsByClassName("toc-line-item").addEventListener("mouseover", function(){
+                this.style.backgroundColor = "#F4F4F4";
+            });
+            document.getElementsByClassName("toc-line-item").addEventListener("mouseout", function(){
+                this.style.backgroundColor = "white";
+            })
+        </script>
     </body>
 </html>

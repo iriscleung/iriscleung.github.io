@@ -65,6 +65,13 @@
                 margin: 0px;
                 padding: 0px 50px 50px 50px;
             }
+            #toc-location {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 25px;
+            }
             #color-key {
                 display: flex;
                 flex-direction: row;
@@ -101,6 +108,8 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 padding: 0px;
+
+                width: 90%;
             }
             .toc-line-item-tags {
                 display: flex;
@@ -131,12 +140,14 @@
                 <h1>
                     Ezra Bird
                 </h1>
-                <p style="float: left;">
-                    Bethesda, Maryland
-                </p>
-                <p style="padding-left: 25px; opacity: 0.2; float: left;">
-                    Los Angeles, California
-                </p>
+                <div id="toc-location">
+                    <p>
+                        Bethesda, Maryland
+                    </p>
+                    <p style="opacity: 0.2;">
+                        Los Angeles, California
+                    </p>
+                </div>
             </div>
             <div id="color-key">
                 <div class="color-key-item">
@@ -165,7 +176,7 @@
                     Case Studies
                 </h2>
                 <div class="toc-line-item">
-                    <p style="width: 75px">
+                    <p style="width: 10%">
                         001
                     </p>
                     <div class="toc-line-item-details">

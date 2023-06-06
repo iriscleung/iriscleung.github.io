@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Ezra Bird</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <style>
+            body {
+                background-color: white;
+                color: black;
+                overflow-y: scroll;
+
+                font-family: 'Helvetica', sans-serif;
+            }
+            #table-of-contents {
+                box-sizing: border-box;
+
+                position: absolute;
+                width: calc((100% - 150px) * (1 / 2));
+                height: calc(100vh - 100px);
+                left: 50px;
+                top: 50px;
+                overflow-y: scroll;
+
+                border: 1px solid black;
+                border-radius: 10px;
+            }
+            #scroll-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+
+                position: absolute;
+                width: calc((100% - 150px) * (1 / 2));
+                right: 50px;
+                top: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="table-of-contents">
+            <p>blah</p>
+        </div>
+    </body>
+</html>

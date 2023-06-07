@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Ezra Bird - Case Study</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+
+        <style>
+            /* Global Elements */
+            body {
+                background-color: white;
+                color: black;
+                margin: 0px;
+                overflow-y: scroll;
+            }
+            h1, 
+            h2, 
+            p {
+                margin: 0px 0px 10px 0px;
+                padding: 0px;
+
+                font-family: 'Helvetica', sans-serif;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            a:hover {
+                opacity: 50%;
+            }
+            .tag {
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+            }
+            #tag-electronics {
+                background: #FFD600;
+            }
+            #tag-mechanical {
+                background: #0075FF;
+            }
+            #tag-code {
+                background: #2BC94C;
+            }
+            #tag-design {
+                background: #D01900;
+            }
+            #tag-product {
+                background: black;
+            }
+            .tags {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0px;
+                gap: 15px;
+            }
+
+
+            /* Case Study Elements */
+            #case-study {
+                box-sizing: border-box;
+
+                width: 50%;
+                margin: 25px auto;
+                padding: 50px;
+
+                border: 1px solid black;
+                border-radius: 10px;
+
+                z-index: 2;
+            }
+            p {
+                margin-top: 30px;
+            }
+            img {
+                width: 100%;
+                margin-top: 30px;
+            }
+            #back-button {
+                box-sizing: border-box;
+
+                position: absolute;
+                width: 6%;
+                left: 25%;
+                top: 75px;
+                padding: 25px 25px;
+
+                border: 1px solid black;
+                border-radius: 10px 0px 0px 10px;
+
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="case-study">
+            <h1 style="font-size: 16px;">
+                Case Study Name
+            </h1>
+            <div class="tags">
+                <div class="tag" id="tag-electronics"></div>
+                <div class="tag" id="tag-code"></div>
+                <div class="tag" id="tag-product"></div>
+            </div>
+            <p>
+                General project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <img src="04 TOO CLOSE TO THE SUN/developing-2.png">
+        </div>
+
+        <div id="back-button">
+            <img src="XX GLOBAL ASSETS/left-arrow-b.png" style="margin-top: 0px;">
+        </div>
+    </body>
+</html>

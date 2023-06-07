@@ -361,7 +361,6 @@
                 function dragMouseDown(e) {
                     e = e || window.event;
                     e.preventDefault();
-                    e.stopPropagation();
                     // get the mouse cursor position at startup:
                     pos3 = e.clientX;
                     pos4 = e.clientY;
@@ -373,7 +372,6 @@
                 function elementDrag(e) {
                     e = e || window.event;
                     e.preventDefault();
-                    e.stopPropagation();
                     // calculate the new cursor position:
                     pos1 = pos3 - e.clientX;
                     pos2 = pos4 - e.clientY;
@@ -393,41 +391,9 @@
             
 
             // Change Card Color When Hover
-            hoverWhiteText(document.getElementById("too-close"));
-            hoverWhiteText(document.getElementById("work-co"));
-            hoverBlackText(document.getElementById("figma"));
-            hoverBlackText(document.getElementById("av"));
-            hoverBlackText(document.getElementById("innod"));
-
-            function hoverWhiteText(elmnt, bgColor) {
-                elmnt.addEventListener("mouseover", function(){
-                    this.style.backgroundColor = bgColor;
-                    this.style.color = "white";
-                });
-                elmnt.addEventListener("mouseout", function(){
-                    hoverClose(elmnt);
-                });
-            }
-
-            function hoverBlackText(elmnt, bgColor) {
-                elmnt.addEventListener("mouseover", function(){
-                    this.style.backgroundColor = bgColor;
-                    this.style.color = "black";
-                });
-                elmnt.addEventListener("mouseout", function(){
-                    hoverClose(elmnt);
-                });
-            }
-
-            function hoverClose(elmnt) {
-                elmnt.style.backgroundColor = "white";
-                elmnt.style.color = "black";
-            }
-
-            /*
             document.getElementById("too-close").addEventListener("mouseover", function(){
                 this.style.backgroundColor = "black";
-                this.style.color = "#808080";
+                this.style.color = "white";
             });
             document.getElementById("too-close").addEventListener("mouseout", function(){
                 this.style.backgroundColor = "white";
@@ -463,7 +429,6 @@
                 this.style.backgroundColor = "white";
                 this.style.color = "black";
             });
-            */
         </script>
 
     </body>

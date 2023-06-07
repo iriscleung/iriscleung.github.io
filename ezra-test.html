@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
 
         <style>
-            /* Global elements */
+            /* Global Elements */
             body {
                 background-color: white;
                 color: black;
@@ -54,8 +54,17 @@
             #tag-product {
                 background: black;
             }
+            .tags {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0px;
+                gap: 15px;
+            }
 
 
+            /* Home Page Elements */
             #table-of-contents {
                 box-sizing: border-box;
 
@@ -122,14 +131,6 @@
                 padding: 0px;
 
                 width: 90%;
-            }
-            .toc-line-item-tags {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: center;
-                padding: 0px;
-                gap: 15px;
             }
             #toc-contact {
                 position: absolute;
@@ -206,7 +207,7 @@
                         <p>
                             Packa
                         </p>
-                        <div class="toc-line-item-tags">
+                        <div class="tags">
                             <div class="tag" id="tag-mechanical"></div>
                             <div class="tag" id="tag-design"></div>
                             <div class="tag" id="tag-product"></div>
@@ -221,7 +222,7 @@
                         <p>
                             Music Reactive Leds
                         </p>
-                        <div class="toc-line-item-tags">
+                        <div class="tags">
                             <div class="tag" id="tag-electronics"></div>
                             <div class="tag" id="tag-mechanical"></div>
                             <div class="tag" id="tag-design"></div>
@@ -241,7 +242,7 @@
                         <p>
                             Jonah's Birthday Gift
                         </p>
-                        <div class="toc-line-item-tags">
+                        <div class="tags">
                             <div class="tag" id="tag-electronics"></div>
                             <div class="tag" id="tag-code"></div>
                             <div class="tag" id="tag-product"></div>

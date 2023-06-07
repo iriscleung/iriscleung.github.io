@@ -57,13 +57,13 @@
             .tags {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-end;
+                justify-content: flex-start;
                 align-items: center;
                 padding: 0px;
                 gap: 15px;
             }
 
-
+            /* Note: .tags must be flex-start */
             /* Case Study Elements */
             #case-study {
                 box-sizing: border-box;
@@ -74,8 +74,6 @@
 
                 border: 1px solid black;
                 border-radius: 10px;
-
-                z-index: 2;
             }
             p {
                 margin-top: 30px;
@@ -87,16 +85,16 @@
             #back-button {
                 box-sizing: border-box;
 
-                position: absolute;
-                width: 6%;
-                left: 25%;
+                position: fixed;
+                width: 5%;
+                left: 20%;
                 top: 75px;
-                padding: 25px 25px;
+                padding: 25px 30px;
 
-                border: 1px solid black;
+                border-width: 1px 0px 1px 1px;
+                border-style: solid;
+                border-color: black;
                 border-radius: 10px 0px 0px 10px;
-
-                z-index: 1;
             }
         </style>
     </head>

@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&family=Six+Caps&display=swap" rel="stylesheet">
 
+        <link rel="preload" href="XX GLOBAL ASSETS/hand.png" as="image">
         <link rel="preload" href="04 TOO CLOSE TO THE SUN/animation-1.gif" as="image">
         <link rel="preload" href="05 KP FIGMA REDESIGN/overview.gif" as="image">
         <link rel="preload" href="01 WORK CO/card-thumbnail.gif" as="image">
@@ -43,6 +44,16 @@
                 padding-bottom: 50px;
                 
                 text-align: center;
+            }
+            #psst {
+                padding-top: 50px;
+
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                
             }
             #content {
                 padding-left: calc(100% * (1 / 12));
@@ -222,6 +233,9 @@
                 WORK
             </p>
             <img src="XX GLOBAL ASSETS/down-arrow-b.png" style="margin-bottom: 0px;">
+            <div id="psst">
+                <p>Psst! Hover over each card for a preview.</p>
+            </div>
         </div>
 
         <div id="content">

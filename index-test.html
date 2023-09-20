@@ -419,7 +419,6 @@
                 var isDragging = false; // Flag to track whether the card is being dragged
 
                 elmnt.onmousedown = dragMouseDown;
-                elmnt.onclick = cardClick; // Add click event listener to the card
 
                 function dragMouseDown(e) {
                     e = e || window.event;
@@ -457,13 +456,14 @@
                     isDragging = false;
                 }
 
-                function cardClick(e) {
-                    // Check if the card is being dragged
-                    if (isDragging) {
-                        e.preventDefault(); // Prevent the default click behavior (e.g., navigating to href)
-                    } else {
-                        // The card is not being dragged, so allow the default click behavior
-                    }
+                // Add a click event listener to the links inside the card
+                var links = elmnt.getElementsByTagName("a");
+                for (var i = 0; i < links.length; i++) {
+                    links[i].addEventListener("click", function (e) {
+                        if (isDragging) {
+                            e.preventDefault(); // Prevent the default click behavior (e.g., navigating to href)
+                        }
+                    });
                 }
             }
 

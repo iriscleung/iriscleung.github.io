@@ -413,10 +413,13 @@
             dragElement(document.getElementById("a-av"));
             dragElement(document.getElementById("a-innod"));
             dragElement(document.getElementById("a-work-co"));
-            
+
             function dragElement(elmnt) {
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+                var isDragging = false; // Flag to track whether the card is being dragged
+
                 elmnt.onmousedown = dragMouseDown;
+                elmnt.onclick = cardClick; // Add click event listener to the card
 
                 function dragMouseDown(e) {
                     e = e || window.event;
@@ -427,6 +430,9 @@
                     document.onmouseup = closeDragElement;
                     // call a function whenever the cursor moves:
                     document.onmousemove = elementDrag;
+
+                    // Set the flag to indicate dragging
+                    isDragging = true;
                 }
 
                 function elementDrag(e) {
@@ -443,11 +449,23 @@
                 }
 
                 function closeDragElement() {
-                    // stop moving when mouse button is released:
+                    // stop moving when the mouse button is released:
                     document.onmouseup = null;
                     document.onmousemove = null;
+
+                    // Reset the dragging flag when the mouse button is released
+                    isDragging = false;
                 }
-            } 
+
+                function cardClick(e) {
+                    // Check if the card is being dragged
+                    if (isDragging) {
+                        e.preventDefault(); // Prevent the default click behavior (e.g., navigating to href)
+                    } else {
+                        // The card is not being dragged, so allow the default click behavior
+                    }
+                }
+            }
 
             
             /*

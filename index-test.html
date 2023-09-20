@@ -246,7 +246,7 @@
         </div>
 
         <div id="content">
-            <a href="06 HANDLE/handle.html" class="a-card" id="a-av">
+            <a href="06 HANDLE/handle.html" draggable="true" class="a-card" id="a-av">
                 <div class="card" id="av">
                     <div>
                         <p>
@@ -264,7 +264,7 @@
                     </div>
                 </div>
             </a>
-            <a href="05 KP FIGMA REDESIGN/kp-figma.html" class="a-card" id="a-figma">
+            <a href="05 KP FIGMA REDESIGN/kp-figma.html" draggable="true" class="a-card" id="a-figma">
                 <div class="card" id="figma">
                     <div>
                         <p>
@@ -282,7 +282,7 @@
                     </div>
                 </div>
             </a>
-            <a href="01 WORK CO/work-co.html" class="a-card" id="a-work-co">
+            <a href="01 WORK CO/work-co.html" draggable="true" class="a-card" id="a-work-co">
                 <div class="card" id="work-co">
                     <div>
                         <p>
@@ -300,7 +300,7 @@
                     </div>
                 </div>
             </a>
-            <a href="04 TOO CLOSE TO THE SUN/too-close.html" class="a-card" id="a-too-close">
+            <a href="04 TOO CLOSE TO THE SUN/too-close.html" draggable="true" class="a-card" id="a-too-close">
                 <div class="card" id="too-close">
                     <div>
                         <p>
@@ -318,7 +318,7 @@
                     </div>
                 </div>
             </a>
-            <a href="03 INNOD X TMP/innodxtmp.html" class="a-card" id="a-innod">
+            <a href="03 INNOD X TMP/innodxtmp.html" draggable="true" class="a-card" id="a-innod">
                 <div class="card" id="innod">
                     <div>
                         <p>
@@ -413,11 +413,9 @@
             dragElement(document.getElementById("a-av"));
             dragElement(document.getElementById("a-innod"));
             dragElement(document.getElementById("a-work-co"));
-
+            
             function dragElement(elmnt) {
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-                var isDragging = false; // Flag to track whether the card is being dragged
-
                 elmnt.onmousedown = dragMouseDown;
 
                 function dragMouseDown(e) {
@@ -429,9 +427,6 @@
                     document.onmouseup = closeDragElement;
                     // call a function whenever the cursor moves:
                     document.onmousemove = elementDrag;
-
-                    // Set the flag to indicate dragging
-                    isDragging = true;
                 }
 
                 function elementDrag(e) {
@@ -451,20 +446,7 @@
                     // stop moving when mouse button is released:
                     document.onmouseup = null;
                     document.onmousemove = null;
-
-                    // Reset the dragging flag when the mouse button is released
-                    isDragging = false;
                 }
-
-                // Add a click event listener to the card
-                elmnt.onclick = function (e) {
-                    // Check if the card is being dragged
-                    if (isDragging) {
-                        e.preventDefault(); // Prevent the default click behavior (e.g., navigating to href)
-                    } else {
-                        // The card is not being dragged, so allow the default click behavior
-                    }
-                };
             }
 
             

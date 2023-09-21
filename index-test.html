@@ -247,7 +247,6 @@
 
         <div id="content">
             <a href="06 HANDLE/handle.html" draggable="true" class="a-card" id="a-av">
-                </a>
                 <div class="card" id="av">
                     <div>
                         <p>
@@ -264,7 +263,7 @@
                         </h1>
                     </div>
                 </div>
-            <!--</a>-->
+            </a>
             <a href="05 KP FIGMA REDESIGN/kp-figma.html" draggable="true" class="a-card" id="a-figma">
                 <div class="card" id="figma">
                     <div>
@@ -419,6 +418,8 @@
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
                 var isDragging = false; // Flag to track whether the card is being dragged
 
+                
+
                 elmnt.onmousedown = dragMouseDown;
 
                 function dragMouseDown(e) {
@@ -438,6 +439,9 @@
                 function elementDrag(e) {
                     e = e || window.event;
                     e.preventDefault();
+
+                    e.stopPropagration()
+
                     // calculate the new cursor position:
                     pos1 = pos3 - e.clientX;
                     pos2 = pos4 - e.clientY;

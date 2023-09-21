@@ -430,6 +430,9 @@
                 }
 
                 function elementDrag(e) {
+                    
+                    e.stopPropagration();
+
                     e = e || window.event;
                     e.preventDefault();
                     // calculate the new cursor position:

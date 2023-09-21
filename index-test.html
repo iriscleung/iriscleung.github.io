@@ -423,6 +423,7 @@
 
         <script>
             // Drag and Drop Cards
+<<<<<<< Updated upstream
             dragElement(document.getElementById("a-too-close"));
             dragElement(document.getElementById("a-figma"));
             dragElement(document.getElementById("a-av"));
@@ -430,13 +431,25 @@
             dragElement(document.getElementById("a-work-co"));
             dragElement(document.getElementById("a-card"));
             
+=======
+            const ids = [ 'a-too-close', 'a-figma', 'a-av', 'a-innod', 'a-work-co' ];
+
+            for (let i in ids) {
+                document.getElementById(ids[i]).removeEventListener('click', () => {})
+            }
+
+>>>>>>> Stashed changes
             function dragElement(elmnt) {
                 var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
                 elmnt.onmousedown = dragMouseDown;
 
                 let isDragging = false;
                 function dragMouseDown(e) {
+<<<<<<< Updated upstream
                     e = e || window.event;
+=======
+                    // e = e || window.event;
+>>>>>>> Stashed changes
                     e.preventDefault();
                     // get the mouse cursor position at startup:
                     pos3 = e.clientX;
@@ -444,6 +457,17 @@
                     document.onmouseup = closeDragElement;
                     // call a function whenever the cursor moves:
                     document.onmousemove = elementDrag;
+<<<<<<< Updated upstream
+=======
+
+                    // Set the flag to indicate dragging
+                    isDragging = true;
+
+                    var links = elmnt.getElementsByTagName("a");
+                    for (var i = 0; i < links.length; i++) {
+                        links[i].style.pointerEvents = "none";
+                    }
+>>>>>>> Stashed changes
                 }
 
                 function elementDrag(e) {
@@ -470,7 +494,32 @@
                     // stop moving when mouse button is released:
                     document.onmouseup = null;
                     document.onmousemove = null;
+<<<<<<< Updated upstream
                 }
+=======
+
+                    // Reset the dragging flag when the mouse button is released
+                    isDragging = false;
+                }
+
+                elmnt.addEventListener("click", (e) => {
+                    if (isDragging) {
+                        console.log("WUEUHEFUHFEUFH");
+                        e.preventDefault()
+                    }
+                })
+
+                // // Add a click event listener to the links inside the card
+                // var links = elmnt.getElementsByTagName("a");
+                // for (var i = 0; i < links.length; i++) {
+                //     links[i].addEventListener("click", function (e) {
+                //         if (isDragging) {
+                //             e.preventDefault(); // Prevent the default click behavior (e.g., navigating to href)
+                //             e.stopPropagation();
+                //         }
+                //     });
+                // }
+>>>>>>> Stashed changes
             }
             
             /*

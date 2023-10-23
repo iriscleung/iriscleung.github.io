@@ -232,7 +232,10 @@ img {
     .text-row {
         flex-direction: column;
     }
-    .text-row * {
+    .text-row h2 {
+        width: 100%;
+    }
+    .text-row p {
         width: 100%;
     }
     .gallery {

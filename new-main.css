@@ -146,6 +146,9 @@ img {
 .text-row p {
     width: 50%;
 }
+.with-ui {
+    width: 50%;
+}
 .gallery {
     padding: 100px calc(100% * (1 / 12));
 
@@ -236,6 +239,9 @@ img {
         width: 100%;
     }
     .text-row p {
+        width: 100%;
+    }
+    .with-ui {
         width: 100%;
     }
     .gallery {

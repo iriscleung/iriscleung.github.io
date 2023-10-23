@@ -218,9 +218,11 @@ img {
         padding-bottom: 50px;
         gap: 50px;
     }
+    .text-row {
+        flex-direction: column;
+    }
     .text-row * {
         width: 100%;
-        flex-direction: column;
     }
     .gallery {
         padding-top: 50px;

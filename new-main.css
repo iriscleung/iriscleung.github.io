@@ -208,14 +208,28 @@ img {
         width: 100%;
     }
     #short {
-        gap: 20px;
+        gap: 50px;
     }
     .text-block {
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 50px;
     }
     .text-row * {
         width: 100%;
+        flex-direction: column;
+    }
+    .gallery {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        gap: 50px;
+    }
+    #redirect-block {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #footer {
+        padding-top: 50px;
     }
 
     #nav-location {

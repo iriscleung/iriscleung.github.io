@@ -2,136 +2,126 @@
     <head>
         <title>Iris Leung - Too Close to the Sun</title>
         <link rel="shortcut icon" type="image/jpg" href="../XX GLOBAL ASSETS/favicon.png">
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
 
-        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../new-main.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Six+Caps&display=swap" rel="stylesheet">
+
+        <link rel="preload" href="animation-1.gif" as="image">
 
         <style>
-            #hero-image {
-                width: 100%;
-
-                background-image: url(hero-image.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            #footer {
-                background-image: url(footer-image.png);
-                background-size: cover;
-                background-repeat: no-repeat;
-            }
-            a {
+            .recolor {
+                background-color: black;
                 color: white;
             }
-            a:hover {
-                color: black;
+            .recolor a {
+                color: white;
+            }
+            .recolor a:hover {
+                color: white;
+                opacity: 50%;
             }
         </style>
     </head>
     <body>
-        <div id="hero-image">
-            <div id="nav" style="color: white;">
-                <div id="nav-location" style="text-align: left; width: 30%;">
-                    <h2>
-                        LOS ANGELES, CALIFORNIA
-                    </h2>
-                </div>
-                <div id="nav-name" style="width: 40%;">
-                    <h2>
-                        <a href="../index">
-                            IRIS LEUNG
-                        </a>
-                    </h2>
-                </div>
-                <div style="text-align: right; width: 20%;">
-                    <h2>
-                        <a href="../index.html">
-                            WORK
-                        </a>
-                    </h2>
-                </div>
-                <div style="text-align: right; width: 10%;">
-                    <h2>
-                        <a href="../00 ABOUT/about.html">
-                            ABOUT
-                        </a>
-                    </h2>
-                </div>
+        <div class="recolor" id="nav">
+            <div id="nav-location" style="text-align: left; width: 30%;">
+                <p>
+                    Los Angeles, California
+                </p>
             </div>
-
-            <div id="back" style="color: white;">
-                <a href="../index.html">
-                    <img src="../XX GLOBAL ASSETS/left-arrow-w.png" style="margin-bottom: 0px;">
-                    <h2 style="line-height: 0;">
-                        BACK
-                    </h2>
-                </a>
+            <div id="nav-name" style="width: 40%;">
+                <p>
+                    <a href="../index">
+                        Iris Leung
+                    </a>
+                </p>
             </div>
-
-            <div id="banner-text" style="color: white;">
-                <div class="banner-block">
-                    <h1>
-                        TOO CLOSE TO THE SUN
-                    </h1>
-                </div>
-                <div class="banner-block">
-                    <p>
-                        PASSION PROJECT
-                        <br>
-                        1 WEEK, WINTER 2022
-                        <br><br>
-                        I normally gravitate towards working on visual + UX design projects, but I rarely get to really <em>build</em> my own designs. Usually I hand projects off to a developer or resort to drag-and-drop website builders like Webflow, Wix, or Squarespace. But I’ve been itching to take on a project, and be responsible from beginning to end.
-                        <br><br>
-                        So I pushed myself to start a personal project where I can do everything, from research to design to both frontend and backend development.
-                        <br><br>
-                        I’ve named this project “Too Close to the Sun”. It’s a growing collection of memories that I’ve made with my friends through documented events and pictures. With the help of a few coding classes, I used HTML, CSS, JavaScript, PHP, and SQL to build this project entirely from scratch during a one week sprint.                
-                    </p>
-                </div>
+            <div style="text-align: right; width: 20%;">
+                <p>
+                    <a href="../index.html">
+                        Work
+                    </a>
+                </p>
+            </div>
+            <div style="text-align: right; width: 10%;">
+                <p>
+                    <a href="../00 ABOUT/about.html">
+                        About
+                    </a>
+                </p>
             </div>
         </div>
 
-        <div id="case-study">
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    GATHERING SCRAPS
-                    <br><br>
-                    This project was built from a bunch of scraps. Nothing was <em>truly</em> original. I knew the development of the site was going to take up a majority of the project timeline, so I made sure to recycle site elements from some previous projects when possible.
+        <div class="recolor" id="back">
+            <a href="../index.html">
+                <img src="../XX GLOBAL ASSETS/left-arrow-w.png" style="margin-bottom: 0px;">
+                <p style="line-height: 0;">
+                    Back
                 </p>
-            </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="scraps-1.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        The inspiration for the name of this passion project was part of a documented quote from my close friend & roommate, Ayonnah Tinsley.
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="scraps-2.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        The site hierarchy was roughly based off of an in-class project, called IYA Yearbook that was completed during the 2022 fall semester.
-                    </p>
-                </div>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    Even though I wanted to prioritize the development of the site, I still wanted to make sure that this site looked and felt great. So I spent the first two of the seven days code free.
-                </p>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    LIFE IS LIKE A MOVIE
-                    <br><br>
-                    My last two years at college have been amazing. My friends agree, life has been like a movie. 
-                    <br><br>
-                    I wanted the look of the site to reflect this shared sentiment and wanted to design the site to look similar to the promotional sites used for motion pictures, film festivals, and creative studios. This meant large, full screen videos and images, with limited copy text only where absolutely necessary (otherwise let the visual assets tell the stories). 
-                    <br><br>
-                    I looked to <a href="https://a24films.com/">A24</a>, a film and television production company that is known for movies such as <em>Everything Everywhere All at Once</em>, and <a href="https://www.hugeinc.com/">Huge</a>, a digital marketing agency based in Brooklyn, for site inspiration. I learned and borrowed a few things from these sites.
+            </a>
+        </div>
 
+        <div class="recolor" id="banner-block">
+            <h1>
+                Too Close to the Sun
+            </h1>
+            <div id="banner-text">
+                <div id="short">
+                    <div>
+                        <h2>
+                            Type
+                        </h2>
+                        <p>
+                            Passion Project
+                        </p>
+                    </div>
+                    <div>
+                        <h2>
+                            Role
+                        </h2>
+                        <p>
+                            Full-Stack Developer, Designer
+                        </p>
+                    </div>
+                    <div>
+                        <h2>
+                            Duration
+                        </h2>
+                        <p>
+                            1 Week
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    I wanted to be responsible for a project from beginning to end, to do absolutely everything, from creative direction and site design to frontend and backend development. This craving soon turned into a passion project: <em>Too Close to the Sun</em>, a growing collection of memories, entirely built with HTML, CSS, JavaScript, PHP, and MySQL.
+                </p>
+            </div>
+            <img src="animation-1.gif" class="l-img">
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Project Objectives
+                </h2>
+                <p>
+                    My friends and I can all agree, life in college has been like a movie.
+                    <br><br>
+                    I wanted the look of the site to reflect this shared sentiment, with full-screen, in-your-face pictures of some of my most memorable moments.
+                </p>
+            </div>
+            <div class="text-row">
+                <h2>
+                    Research & Ideation
+                </h2>
+                <p>
+                    I drew inspiration from A24, a production company known for films like <em>Everything Everywhere All at Once</em>, and Huge, a Brooklyn-based digital marketing agency that was behind the creation of larger-than-life experiences like Magentaverse for Pantone. From this initial research, I took down a few key notes.
                     <ul>
                         <li>
                             Simple nav bars (and even simpler site hierarchies).
@@ -143,59 +133,45 @@
                             Not all assets are created equal. Prioritize the assets that fit the best with the text that’s being used.
                         </li>
                     </ul>
-
-                    With these notes, I focused on two pages of Too Close to the Sun: the Home page and the Details page.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="animation-1.gif" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        On the Home page, users can swipe through different memory collections. The background shows a blurred preview of some of the images inside the collection.
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="animation-2.gif" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        Each Details page showcases all of the images within a collection, along with the image details. The event description follows the user as they scroll through the images.
-                    </p>
-                </div>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+            <div class="text-row">
+                <h2>
+                    Site Design
+                </h2>
                 <p>
-                    Additional Search and Results pages were created later in the week as my attention began to pivot towards the site’s frontend and backend development.
-                </p>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    BEHIND THE PIXELS
+                    I focused on two pages of <em>Too Close to the Sun</em>: the Home page and the Details page.
                     <br><br>
-                    I spent the rest of the week developing the site entirely from scratch. I switched between several different platforms to develop the initial site designs.
+                    Additional admin pages were created later in the week as I began to pivot towards the site’s frontend and backend development.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="developing-1.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        Databases were built and populated through phpMyAdmin, a free open source software tool. 
-                        <br><br>
-                        These databases are the structural backbone behind all of the information on the Too Close to the Sun site (e.g. event information, image URLs, camera specs).
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="developing-2.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        The site was developed entirely in PhpStorm. I flipped back and forth in building the frontend interfaces (in HTML, CSS, and JavaScript) alongside with bits and pieces of the backend (in PHP and SQL).
-                    </p>
-                </div>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    Here’s a list of some other notable bells and whistles that were developed for the final site.
+        </div>
 
+        <div class="gallery">
+            <div class="m-img">
+                <img src="animation-1.gif">
+                <p>
+                    On the Home page, users can swipe through different collections as the background shows a blurred preview.
+                </p>
+            </div>
+            <div class="m-img">
+                <img src="animation-2.gif">
+                <p>
+                    Each Details page showcases all of the images within a collection, along with the image details.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Site Development
+                </h2>
+                <p>
+                    I switched between several different platforms to develop these initial site designs entirely from scratch. Here’s a list of some other notable bells and whistles that were developed for the final site.
                     <ul>
                         <li>
-                            Admin-only pages were created so that I can add new events, images, and people without having to manually input the new information into the site database.
+                            Admin-only pages were created so that I can add new events, images, and people without having to manually input the new information into the site databases.
                         </li>
                         <li>
                             Search tools were added to allow users to find certain pictures from specific events or with particular people.
@@ -209,37 +185,61 @@
                     </ul>
                 </p>
             </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+        </div>
+
+        <div class="gallery">
+            <div class="m-img">
+                <img src="developing-1.png">
                 <p>
-                    THE END
+                    Databases were built and populated through phpMyAdmin, a free open source software tool. 
                     <br><br>
-                    The finished site can be found <a href="https://webdev.iyaclasses.com/~icleung/acad276/Sun/index.php">here</a>. A comprehensive walkthrough of the entire site (with access to admin-only pages) might look a little something like <a href="https://drive.google.com/file/d/1MM_F58fAdyQszN1wlFa4QaxXyF0o3IDN/view?usp=share_link">this</a> (the file was too large to be included here).
+                    These databases are the structural backbone behind all of the information on the Too Close to the Sun site (e.g. event information, image URLs, camera specs).
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 75px;">
-                <div class="l-img">
-                    <a href="https://drive.google.com/file/d/1MM_F58fAdyQszN1wlFa4QaxXyF0o3IDN/view?usp=share_link">
-                        <img src="overview.png" style="width: 100%;">
-                    </a>
-                </div>
-            </div>
-            <div class="text-block">
+            <div class="m-img">
+                <img src="developing-2.png">
                 <p>
-                    SHOUTOUTS
-                    <br><br>
-                    Special thanks to professor Patrick Dent, a faculty member at the USC Iovine and Young Academy, for teaching me all the basics of frontend and backend development. And an extra thank you for supporting me during this one week sprint (even while school was off)!
-                    <br><br>
-                    Thanks to Ellie Paik, Jenna Gestetner, Kate Mathew, and Sade Korbieh, the rest of my amazing team behind the original IYA Yearbook site
+                    The site was developed entirely in PhpStorm. I flipped back and forth in building the frontend interfaces (in HTML, CSS, and JavaScript) alongside with bits and pieces of the backend (in PHP and SQL).
                 </p>
             </div>
         </div>
 
-        <div id="banner-text">
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    The End
+                </h2>
+                <p>
+                    The finished site can be found <a href="https://webdev.iyaclasses.com/~icleung/acad276/Sun/index.php">here</a>. A comprehensive walkthrough of the entire site (with access to admin-only pages) might look a little something like <a href="https://drive.google.com/file/d/1MM_F58fAdyQszN1wlFa4QaxXyF0o3IDN/view?usp=share_link">this</a> (the file was too large to be included here).
+                </p>
+            </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="l-img">
+                <img src="overview.png">
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Shoutouts
+                </h2>
+                <p>
+                    Special thanks to professor Patrick Dent, a faculty member at the USC Iovine and Young Academy, for teaching me all the basics of frontend and backend development. And an extra thank you for supporting me during this one week sprint (even while school was off)!
+                    <br><br>
+                    Thanks to Ellie Paik, Jenna Gestetner, Kate Mathew, and Sade Korbieh, the rest of my amazing team behind an earlier version of this site.
+                </p>
+            </div>
+        </div>
+
+        <div id="redirect-block">
             <div class="redirect" style="text-align: left;">
                 <a href="../01 WORK CO/work-co.html">
                     <img src="../../XX GLOBAL ASSETS/left-arrow-b.png">
                     <p>
-                        WORK & CO
+                        Work & Co
                     </p>
                 </a>
             </div>
@@ -247,42 +247,42 @@
                 <a href="../03 INNOD X TMP/innodxtmp.html">
                     <img src="../../XX GLOBAL ASSETS/right-arrow-b.png">
                     <p>
-                        INNOD X TMP
+                        Trojan Marketplace
                     </p>
                 </a>
             </div>
         </div>
 
-        <div id="footer" style="color: white;">
+        <div class="recolor" id="footer">
             <div style="text-align: left; flex-grow: 7;">
-                <h2>
-                    THANKS FOR POPPING BY!
+                <p>
+                    Thanks for popping by!
                     <br><br>
-                    I'M CURRENTLY BASED IN LOS ANGELES, CALIFORNIA. HAVE A PROJECT IN MIND? <a href="mailto:iriscleung@gmail.com">LET'S TALK</a>!    
+                    I'm currently based in Los Angeles, California. Have a project in mind? <a href="mailto:iriscleung@gmail.com">Let's talk</a>!    
                     <br>
-                    THIS WEBSITE WAS DESIGNED AND CODED ENTIRELY FROM SCRATCH.             
-                </h2>
+                    This website was designed and coded entirely from scratch.            
+                </p>
             </div>
             <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="https://instagram.com/iriscleung/" target="_blank">
-                        INSTAGRAM
+                        Instagram
                     </a>
-                </h2>
+                </p>
             </div>
             <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="https://www.linkedin.com/in/iris-c-leung/" target="_blank">
-                        LINKEDIN
+                        LinkedIn
                     </a>
-                </h2>
+                </p>
             </div>
             <div style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="../XX GLOBAL ASSETS/resume.pdf" target="_blank">
-                        RESUME
+                        Resume
                     </a>
-                </h2>
+                </p>
             </div>
         </div>
 
@@ -297,5 +297,6 @@
                 });
             });
         </script>
+
     </body>
 </html>

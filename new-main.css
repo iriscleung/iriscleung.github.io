@@ -146,7 +146,7 @@ img {
 .text-row p {
     width: 50%;
 }
-.with-ui {
+.with-ul {
     width: 50%;
 }
 .gallery {
@@ -241,7 +241,7 @@ img {
     .text-row p {
         width: 100%;
     }
-    .with-ui {
+    .with-ul {
         width: 100%;
     }
     .gallery {

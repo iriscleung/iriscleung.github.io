@@ -32,12 +32,6 @@ a:hover {
     color: black;
     opacity: 50%;
 }
-ul {
-    width: 100%;
-}
-li {
-    width: 100%;
-}
 img {
     width: 100%;
 }
@@ -142,6 +136,12 @@ img {
 }
 .text-row * {
     width: 50%;
+}
+.text-row ul {
+    width: 100%;
+}
+.text-row li {
+    width: 100%;
 }
 .gallery {
     padding: 100px calc(100% * (1 / 12));

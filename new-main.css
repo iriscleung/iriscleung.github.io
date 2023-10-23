@@ -32,6 +32,12 @@ a:hover {
     color: black;
     opacity: 50%;
 }
+ul {
+    width: 100%;
+}
+li {
+    width: 100%;
+}
 img {
     width: 100%;
 }

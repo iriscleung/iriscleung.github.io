@@ -134,7 +134,15 @@ img {
     width: 50%;
 }
 .gallery {
+    padding: 100px calc(100% * (1 / 12));
 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+
+    background-color: #F1F1F1;
 }
 #footer {
     padding-top: 125px;

@@ -26,7 +26,7 @@
                 color: white;
                 opacity: 80%;
             }
-            nav p {
+            nav * p {
                 text-transform: uppercase;
                 font-size: 14px;
             }
@@ -40,9 +40,12 @@
                 text-transform: uppercase;
                 font-size: 16px;
             }
-            img {
-                width: 100%;
-                margin-bottom: 0px;
+            #back {
+                padding: 0 calc(100% * (1 / 12));
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
             }
             #back p {
                 text-transform: uppercase;
@@ -167,6 +170,7 @@
                     Please reach out if you would like to learn more about my work in detail.
                 </p>
             </div>
+            <img src="module-light.png" class="l-img">
         </div>
 
         <div class="case-study">

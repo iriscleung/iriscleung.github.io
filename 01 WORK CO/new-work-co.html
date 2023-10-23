@@ -15,9 +15,16 @@
         <link rel="preload" href="module.png" as="image">
 
         <style>
-            .recolor {
-                background-color: #FF3029;
-                color: white;
+            /* Global elements */
+            h1 {
+                font-family: 'Six Caps', sans-serif;
+                font-size: 115px;
+                font-weight: normal;
+                margin: 0px;
+            }
+            h2 {
+                text-transform: uppercase;
+                font-size: 16px;
             }
             a {
                 color: white;
@@ -30,22 +37,18 @@
                 text-transform: uppercase;
                 font-size: 14px;
             }
-            h1 {
-                font-family: 'Six Caps', sans-serif;
-                font-size: 115px;
-                font-weight: normal;
-                margin: 0px;
-            }
-            h2 {
-                text-transform: uppercase;
-                font-size: 16px;
+
+            .recolor {
+                background-color: #FF3029;
+                color: white;
             }
             #back {
                 padding: 0 calc(100% * (1 / 12));
-
+            }
+            #back a {
                 display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
+                flex-direction: row;
+                align-items: center;
             }
             #back p {
                 text-transform: uppercase;
@@ -53,14 +56,14 @@
             }
             #banner-block {
                 padding-top: 50px;
-                padding-bottom: 125px;
+                padding-bottom: 80px;
                 padding-left: calc(100% * (1 / 12));
                 padding-right: calc(100% * (1 / 12));
 
                 display: inline-flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 125px;
+                gap: 50px;
             }
             #banner-text {
                 width: 60%;
@@ -70,6 +73,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 20px;
             }
             #short {
                 padding: 0px;
@@ -91,6 +95,13 @@
 
                 background-color: white;
                 color: black;
+            }
+            .text-row {
+                display: flex;
+                align-items: center;
+            }
+            .text-row * {
+                width: 50%;
             }
         </style>
     </head>
@@ -174,7 +185,16 @@
         </div>
 
         <div class="case-study">
-
+            <div class="text-row">
+                <h2>
+                    Project Highlight
+                </h2>
+                <p>
+                    The first project I worked on was Kresus, a multi-purpose crypto wallet. During this project, I got to try my hand at designing frameworks, design systems, user flows, and more. 
+                    <br><br>
+                    I spent my first few weeks exploring frameworks and user flows. Here are a few of my favorite iterations and explorations.
+                </p>
+            </div>
         </div>
     </body>
 </html>

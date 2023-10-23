@@ -2,236 +2,285 @@
     <head>
         <title>Iris Leung - Figma Redesign</title>
         <link rel="shortcut icon" type="image/jpg" href="../XX GLOBAL ASSETS/favicon.png">
-        
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
 
-        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="../new-main.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Six+Caps&display=swap" rel="stylesheet">
+
+        <link rel="preload" href="overview.gif" as="image">
+
+        <style>
+            .recolor {
+                background-color: #C7B9FF;
+            }
+            .gallery {
+                background-color: #FAFAFA;
+            }
+        </style>
     </head>
     <body>
-        <div id="nav" style="background-color: #C7B9FF;
-        color: black;">
+        <div class="recolor" id="nav">
             <div id="nav-location" style="text-align: left; width: 30%;">
-                <h2>
-                    LOS ANGELES, CALIFORNIA
-                </h2>
+                <p>
+                    Los Angeles, California
+                </p>
             </div>
             <div id="nav-name" style="width: 40%;">
-                <h2>
+                <p>
                     <a href="../index">
-                        IRIS LEUNG
+                        Iris Leung
                     </a>
-                </h2>
+                </p>
             </div>
             <div style="text-align: right; width: 20%;">
-                <h2>
+                <p>
                     <a href="../index.html">
-                        WORK
+                        Work
                     </a>
-                </h2>
+                </p>
             </div>
             <div style="text-align: right; width: 10%;">
-                <h2>
+                <p>
                     <a href="../00 ABOUT/about.html">
-                        ABOUT
+                        About
                     </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="recolor" id="back">
+            <a href="../index.html">
+                <img src="../XX GLOBAL ASSETS/left-arrow-b.png" style="margin-bottom: 0px;">
+                <p style="line-height: 0;">
+                    Back
+                </p>
+            </a>
+        </div>
+
+        <div class="recolor" id="banner-block">
+            <h1>
+                Figma
+            </h1>
+            <div id="banner-text">
+                <div id="short">
+                    <div>
+                        <h2>
+                            Type
+                        </h2>
+                        <p>
+                            Design Challenge
+                        </p>
+                    </div>
+                    <div>
+                        <h2>
+                            Role
+                        </h2>
+                        <p>
+                            Product Designer
+                        </p>
+                    </div>
+                    <div>
+                        <h2>
+                            Duration
+                        </h2>
+                        <p>
+                            2 Weeks
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Figma's in-app communication tools are lacking, with few built-in collaboration options for designers. I wanted to address this issue, aiming to enhance team communication without the need for external platforms.
+                    <br><br>
+                    This design challenge was completed as part of the 2023 Kleiner Perkins Fellowship application.
+                </p>
+            </div>
+            <img src="overview.gif" class="l-img">
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Pain Point Overview
                 </h2>
-            </div>
-        </div>
-
-        <div id="back" style="background-color: #C7B9FF;
-            color: black;">
-                <a href="../index.html">
-                    <img src="../XX GLOBAL ASSETS/left-arrow-b.png" style="margin-bottom: 0px;">
-                    <h2 style="line-height: 0;">
-                        BACK
-                    </h2>
-                </a>
-        </div>
-
-        <div id="banner-text" style="background-color: #C7B9FF;
-        color: black;">
-            <div class="banner-block">
-                <h1>
-                    FIGMA
-                </h1>
-            </div>
-            <div class="banner-block">
                 <p>
-                    DESIGN CHALLENGE
-                    <br>
-                    WINTER 2022
+                    During my internship at Work & Co, a digital product agency (read more about my experience <a href="../01 WORK CO/work-co.html">here</a>), I realized how frustrating it was to work together with other designers on the same project. 
                     <br><br>
-                    Figma’s current tools for in-app communication are messy. There are very few in-built collaboration tools in Figma’s platform that 
-                    allow designers to tackle a project <em>together</em>. 
-                    <br><br>
-                    How can we change this? How can we allow teams to better communicate without having to move to third-party platforms?
-                    <br><br>
-                    This design challenge was completed as part of the 2023 Kleiner Perkins Fellowship application.              
+                    We designed our products on Figma, but we had to flip back and forth between Figma and Slack to communicate with other team members.
                 </p>
             </div>
         </div>
 
-        <div id="case-study">
-            <div class="text-block" style="margin-bottom: 125px;">
+        <div class="gallery">
+            <div class="m-img">
+                <img src="painpoint-1.png">
                 <p>
-                    THE PAIN POINT
+                    In Figma, we created a separate page to track the list of tasks we needed to do before each check-in with our client. 
                     <br><br>
-                    Last summer, I completed a 12 week internship at Work & Co, a digital product agency located in Brooklyn, New York (read more about my experience <a href="../01 WORK CO/work-co.html">here</a>). During this internship, I quickly realized how frustrating it was to work together with other designers on the same project. 
-                    <br><br>
-                    We designed our products on Figma, but we had to flip back and forth between Figma and Slack to delegate responsibilities, check on each other’s progress, and to communicate with other team members.
-                    <br><br>
-                    Who is doing what? Where is it located? Has Chris finished updating his screens yet? There was so much friction.
+                    This method did not provide our team with details about the location of the task, the progress towards task completion, or whether a team member needed help.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="painpoint-1.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        In Figma, we created a separate page to track the list of tasks we needed to do before each check-in with our client. All team members placed their names next to their current task and updated the task list with emojis to let others know when the task was complete.
-                        <br><br>
-                        This method did not provide our team with details about the location of the task, the progress towards task completion, or whether a team member needed help.
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="painpoint-2.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        We also tried updating each other by leaving comments on our Figma files to help better communicate when we needed help. 
-                        <br><br>
-                        But this quickly became very messy. It was hard for us to discern which comments and tasks were related. It also became hard to organize older comments and to locate relevant comments when we needed them in the future.
-                    </p>
-                </div>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+            <div class="m-img">
+                <img src="painpoint-2.png">
                 <p>
-                    These work arounds were unsuccessful, but they’ve helped me better understand what designers wanted in collaborative, in-app tools. And of course, what needed to be addressed in my redesign.
+                    We also tried updating each other by leaving comments on our Figma files to help better communicate when we needed help. 
+                    <br><br>
+                    But this quickly became very messy. It was hard for us to discern which comments and tasks were related. It also became hard to organize older comments and to locate relevant comments when we needed them in the future.
                 </p>
             </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    USER INTERVIEWS
-                    <br><br>
-                    I conducted 6 interviews with experienced Figma users to better understand how everyday users juggle between Figma and other third-party messaging platforms. 
-                    <br><br>
-                    Interviewees include college students, agency designers, freelance designers, and college professors to ensure that the results came from users of varying Figma experience and diverse personal backgrounds. 
-                </p>
-            </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="takeaways.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        The key takeaways from the interviews revealed that these same pain points were felt by a lot of different Figma users. Regardless of their background and current occupation, Figma’s collaborative tools just weren’t enough. 
-                        <br><br>
-                        I used these takeaways to better understand what needed to be addressed in my redesign.
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="notion.png" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        All user interview questions and answers have been documented on a Notion page and can be found <a href="https://near-hound-596.notion.site/KP-Fellowship-Figma-Redesign-User-Interviews-9cd2bfa83f4e4bfda723aba4492b86a6">here</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="text-block" style="margin-bottom: 125px;">
-                <p>
-                    MY SOLUTION
-                    <br><br>
-                    For this design challenge, I focused on tackling two main pain points.
-                    
-                    <ul>
-                        <li>
-                            Organization. Create a system that allows users to delegate project tasks in an organized space.
-                        </li>
-                        <li>
-                            Ease. Users should be able to reference these collaborative tools on Figma anytime, anywhere.
-                        </li> 
-                    </ul>
+        </div>
 
-                    The redesigned user flow enables users to stay on Figma’s platform throughout the entire collaborative process, allowing users to avoid the headache that came with the original, multi-platform method of communication.
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    User Interview
+                </h2>
+                <p>
+                    I conducted 6 interviews with Figma users of varying platform experience to better understand how everyday users juggle between Figma and other third-party messaging platforms. 
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 75px;">
-                <div class="l-img">
-                    <img src="userflow.png" style="width: 100%;">
+        </div>
+
+        <div class="gallery">
+            <div class="m-img">
+                <img src="takeaways.png">
+                <p>
+                    The key takeaways from the interviews revealed that these same pain points were felt by a lot of different Figma users. Regardless of their background and current occupation, Figma’s collaborative tools just weren’t enough. 
+                </p>
+            </div>
+            <div class="m-img">
+                <img src="notion.png">
+                <p>
+                    All user interview questions and answers have been documented on a Notion page and can be found <a href="https://near-hound-596.notion.site/KP-Fellowship-Figma-Redesign-User-Interviews-9cd2bfa83f4e4bfda723aba4492b86a6">here</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Takeaways
+                </h2>
+                <div>
+                    <p style="width: 100%;">
+                        For this design challenge, I focused on tackling two main pain points.
+                        <ul style="width: 100%;">
+                            <li>
+                                Organization. Create a system that allows users to delegate project tasks in an organized space.
+                            </li>
+                            <li>
+                                Ease. Users should be able to reference these collaborative tools on Figma anytime, anywhere. 
+                            </li>
+                        </ul>
+                        The redesigned user flow enables users to stay on Figma’s platform throughout the entire collaborative process, allowing users to avoid the headache that came with the original, multi-platform method of communication.
+                    </p>
                 </div>
             </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+        </div>
+        
+        <div class="gallery">
+            <div class="l-img">
+                <img src="userflow.png">
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    My Solution
+                </h2>
                 <p>
-                    THE TASK TOOL
-                    <br><br>
                     Users can add a new task on Figma by clicking on the purple “+” icon at the bottom right hand corner. Task information can be added right away or changed at a later time. Tasks can be assigned to a team member and users can add “Tagged Individuals” so that selected team members are notified whenever task information or task progress is changed or updated.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 75px;">
-                <div class="l-img">
-                    <img src="overview.gif" style="width: 100%;">
-                </div>
+        </div>
+        
+        <div class="gallery">
+            <div class="l-img">
+                <img src="overview.gif">
             </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Additional Details
+                </h2>
                 <p>
-                    THE ADDITIONAL DETAILS
-                    <br><br>
                     Before and after adding a new task, the user can continue to swap in-and-out between the Task Tool and the rest of Figma.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 100px;">
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="toolbar.gif" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        The Task Tool utilizes the existing Figma framework that users are already familiar with. The Task Tool icon can be found on the toolbar so that users can access their tasks at anytime, no matter where they are in their Figma project.
-                    </p>
-                </div>
-                <div class="m-img" style="margin-bottom: 25px;">
-                    <img src="progress.gif" style="width: 100%; margin-bottom: 10px;">
-                    <p>
-                        Users can update their task progress by changing the colored dot next to the task name. Tagged individuals will be updated of any progress updates.
-                    </p>
-                </div>
+        </div>
+
+        <div class="gallery">
+            <div class="m-img">
+                <img src="toolbar.gif">
+                <p>
+                    The Task Tool utilizes the existing Figma framework that users are already familiar with. The Task Tool icon can be found on the toolbar so that users can access their tasks at anytime, no matter where they are in their Figma project. 
+                </p>
             </div>
-            <div class="text-block" style="margin-bottom: 125px;">
+            <div class="m-img">
+                <img src="progress.gif">
+                <p>
+                    Users can update their task progress by changing the colored dot next to the task name. Tagged individuals will be updated of any progress updates.
+                </p>
+            </div>
+        </div>
+
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Example Mockups
+                </h2>
                 <p>
                     Here are some examples of the Task Tool being used for real team projects, populated with actual tasks that were originally delegated through Slack, Notion, iMessage, and other third-party platforms.
                 </p>
             </div>
-            <div class="gallery" style="margin-bottom: 75px;">
-                <div class="l-img">
-                    <img src="use-cases.gif" style="width: 100%;">
-                </div>
-            </div>
-            <div class="text-block">
-                <p>
-                    NEXT STEPS
-                    <br><br>
-                    Before the Task Tool can be published as part of Figma’s collection of tools, there are still a few more things that need to be done.
-                    
-                    <ul>
-                        <li>
-                            How else can the Task Tool be used? Conduct more user interviews to better understand the pain points of teams AND independent designers.
-                        </li>
-                        <li>
-                            Can clients also use the Task Tool? Research what cross-platform integration might look like and new user flows.
-                        </li>
-                        <li>
-                            Explore cross-tool features that would allow users to connect task-related Figma comments to the respective task in the Task Tool.
-                        </li>
-                        <li>
-                            More accessibility and usability testing with users of varying Figma experience from diverse backgrounds.
-                        </li>
-                    </ul>
-                </p>
+        </div>
+        
+        <div class="gallery">
+            <div class="l-img">
+                <img src="use-cases.gif">
             </div>
         </div>
 
-        <div id="banner-text">
+        <div class="text-block">
+            <div class="text-row">
+                <h2>
+                    Next Steps
+                </h2>
+                <div>
+                    <p style="width: 100%;">
+                        Before the Task Tool can be published as part of Figma’s collection of tools, there are still a few more things that need to be done.
+                        <ul style="width: 100%;">
+                            <li>
+                                How else can the Task Tool be used? Conduct more user interviews to better understand the pain points of teams AND independent designers.
+                            </li>
+                            <li>
+                                Can clients also use the Task Tool? Research what cross-platform integration might look like and new user flows.
+                            </li>
+                            <li>
+                                Explore cross-tool features that would allow users to connect task-related Figma comments to the respective task in the Task Tool
+                            </li>
+                            <li>
+                                More accessibility and usability testing with users of varying Figma experience from diverse backgrounds.
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="redirect-block">
             <div class="redirect" style="text-align: left;">
                 <a href="../06 HANDLE/handle.html">
                     <img src="../../XX GLOBAL ASSETS/left-arrow-b.png">
                     <p>
-                        HANDLE
+                        Handle
                     </p>
                 </a>
             </div>
@@ -239,43 +288,42 @@
                 <a href="../01 WORK CO/work-co.html">
                     <img src="../../XX GLOBAL ASSETS/right-arrow-b.png">
                     <p>
-                        WORK & CO
+                        Work & Co
                     </p>
                 </a>
             </div>
         </div>
 
-        <div id="footer" style="background-color: #C7B9FF;
-        color: black;">
+        <div class="recolor" id="footer">
             <div style="text-align: left; flex-grow: 7;">
-                <h2>
-                    THANKS FOR POPPING BY!
+                <p>
+                    Thanks for popping by!
                     <br><br>
-                    I'M CURRENTLY BASED IN LOS ANGELES, CALIFORNIA. HAVE A PROJECT IN MIND? <a href="mailto:iriscleung@gmail.com">LET'S TALK</a>!    
+                    I'm currently based in Los Angeles, California. Have a project in mind? <a href="mailto:iriscleung@gmail.com">Let's talk</a>!    
                     <br>
-                    THIS WEBSITE WAS DESIGNED AND CODED ENTIRELY FROM SCRATCH.             
-                </h2>
+                    This website was designed and coded entirely from scratch.            
+                </p>
             </div>
             <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="https://instagram.com/iriscleung/" target="_blank">
-                        INSTAGRAM
+                        Instagram
                     </a>
-                </h2>
+                </p>
             </div>
             <div class="desktop-footer" style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="https://www.linkedin.com/in/iris-c-leung/" target="_blank">
-                        LINKEDIN
+                        LinkedIn
                     </a>
-                </h2>
+                </p>
             </div>
             <div style="text-align: right; flex-grow: 1;">
-                <h2>
+                <p>
                     <a href="../XX GLOBAL ASSETS/resume.pdf" target="_blank">
-                        RESUME
+                        Resume
                     </a>
-                </h2>
+                </p>
             </div>
         </div>
 
@@ -290,5 +338,6 @@
                 });
             });
         </script>
+
     </body>
 </html>

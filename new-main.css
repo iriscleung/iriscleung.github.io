@@ -39,6 +39,9 @@ img {
 .m-img {
     width: 47.5%;
 }
+.m-img img {
+    margin-bottom: 10px;
+}
 .l-img {
     width: 100%;
 }

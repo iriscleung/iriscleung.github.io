@@ -31,7 +31,6 @@ a:hover {
     opacity: 80%;
 }
 img {
-    margin-bottom: 50px;
     width: 100%;
 }
 .s-img {
@@ -143,6 +142,28 @@ img {
 
     background-color: #F1F1F1;
 }
+#redirect-block {
+    padding-top: 100px;
+    padding-bottom: 125px;
+    padding-left: calc(100% * (1 / 12));
+    padding-right: calc(100% * (1 / 12));
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+}
+.redirect {
+    width: 50%;
+}
+.redirect img {
+    margin-bottom: 0px;
+}
+.redirect p {
+    font-size: 14px;
+}
 #footer {
     padding-top: 125px;
     padding-bottom: 30px;
@@ -153,5 +174,9 @@ img {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-}
 
+    text-transform: uppercase;
+}
+#footer p {
+    font-size: 14px;
+}
